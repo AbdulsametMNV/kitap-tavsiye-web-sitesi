@@ -1,0 +1,67 @@
+<!-- kaydol.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Formu</title>
+    <link rel="stylesheet" href="../static/style-login.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper"> 
+        <form id="registerForm" action="/kaydol" method="POST">
+            <h1>Kayıt Ol</h1>
+            <div class="input-box">
+                <input type="text" id="username" name="username" placeholder="Kullanıcı adı" required>
+                <i class="bx bxs-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" name="password" placeholder="Şifre" required>
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+
+
+            <button type="submit" class="btn">Kayıt Ol</button>
+
+            <div class="register-link">
+                <p>Hesabınız var mı? <a href="/login">Giriş Yap</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Kayıt formunu AJAX ile gönderme
+    document.getElementById('registerForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        fetch('/kaydol', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ username, password })
+        })
+        .then(response => {
+            if (response.ok) {
+                return response.json();
+            }
+            throw new Error('Kayıt işlemi başarısız!');
+        })
+        .then(data => {
+            alert(data.message || 'Kayıt başarılı!');
+            window.location.href = '/login';
+        })
+        .catch(error => {
+            console.error('Hata:', error);
+            alert('Bir hata oluştu: ' + error.message);
+        });
+    });
+
+    </script>
+</body>
+</html>

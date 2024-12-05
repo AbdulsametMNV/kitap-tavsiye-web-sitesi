@@ -1,0 +1,14 @@
+<!-- product_detail.html -->
+<html>
+<head>
+    <title>{{ product[1] }} Detayları</title>
+</head>
+<body>
+    <h1>{{ product[1] }}</h1> <!-- Ürün adı -->
+    
+    <!-- Favorilere ekleme formu -->
+    <form action="{{ url_for('add_to_favorites', product_id=product[0]) }}" method="POST">
+        <button type="submit">Favorilere Ekle</button>
+    </form>
+</body>
+</html>

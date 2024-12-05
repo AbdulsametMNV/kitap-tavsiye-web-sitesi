@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kitap Önerileri</title>
+        <link rel="stylesheet" href="../static/styles.css"> <!-- CSS dosyasını bağlama -->
+        <script src="../static/scripts.js" defer></script> <!-- JavaScript dosyasını ekle -->
+    </head>
+    
+<body class="dunyaK-body"> <!-- class ekleyin -->
+    <header>
+        <div class="header-container">
+            <img src="../static/dunyaedeb2.jpg" alt="Sol Resim" class="side-image left" width="200" height="250"> <br>
+            
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Anasayfa</a></li>
+                <li><a href="/tklasik">Türkiye Edebiyatında İlkler</a></li>
+                <li><a href="/bilimk">Bilim Kurgu</a></li>
+                <li><a href="/polisiye">Polisiye</a></li>
+                <li><a href="/romanlar">Romanlar</a></li>
+                <li><a href="/siirler">Şiirler</a></li>
+            </ul>
+        </nav>
+        <img src="../static/dunyaK-arkaplan.jpg" alt="Sağ Resim" class="side-image right" width="200" height="250">
+    </header>
+    
+
+    <h2 style="color: whitesmoke;">Dünya Klasikleri</h2>
+    <section id="sectionDunyaK">
+   
+       
+            <h4>Suç ve Ceza - Fyodor Dostoyevski</h4>
+            <div class="images-text-wrapper-dunyaK"> 
+                <div class="dunyaEdeb">
+                    <img src="../static/suc-ve-ceza.jpg" class="left-image-dunyaK" width="250" id="bookImage1">
+                
+                    <p>
+                        Suç ve Ceza, Rus yazar Fyodor Dostoyevski tarafından yazılan psikolojik ve dram türündeki romandır.
+                        Rodion Raskolnikov, Saint Petersburg'da yoksulluk içinde yaşayan eski bir hukuk öğrencisidir. Yaşlı bir tefeci olan Alyona İvanovna'yı soymak ve öldürmek için bir plan yapar; cinayeti işler ve paniğe kapılır
+                        <span id="dots1">...</span>
+                        <span id="more-text1" class="more-text">
+                        Raskolnikov, ailesinin geçimini sağlamak için fahişe olan Sonya ile tanışır ve aralarında bir bağ oluşur. Kız kardeşi Dunya'nın kötü bir evlilik teklifi alması üzerine ona yardım etmeye çalışırken, dedektif Porfiriy ile karşılaşır ve suçunu itiraf etme dürtüsüyle mücadele eder.
+                        Sonunda, içsel çatışmaları sonucunda suçunu kabul eder ve Sibirya'da sekiz yıl hapis cezası alır. Sonya, ona destek olmaya devam ederken, Dunya ile Razumihin evlenir ve Raskolnikov, Sibirya'da ahlaki bir yenilenme sürecine girer.
+                    </span>
+                    <button onclick="toggleText('dots1', 'more-text1', 'read-more-btn1')" id="read-more-btn1" style="color: #000033; background-color: #e6e6e6; border: none; padding: 5px; cursor: pointer;">Devamını Oku</button>
+                    </p>
+                    
+                    <img src="../static/dostoevskyjpg.jpg" class="right-image-dunyaK" width="250">
+                </div>
+                <style>
+                    #more-text {
+                        display: none;
+                    }
+                </style>
+                
+            </div>
+        
+
+    
+        <h4>Sefiller - Victor Hugo</h4>
+        <div class="images-text-wrapper-dunyaK"> 
+            <div class="dunyaEdeb">
+                <img src="../static/sefiller.jpg"  class="left-image-dunyaK" width="250" id="bookImage2">
+                
+                <p>
+                    Sefiller, Victor Hugo tarafından yazılan tarihi romandır. Jean Valjean ekmek çaldığı için beş yıl kürek cezasına çarptırılmış, birkaç kez kaçmaya kalkıştığı için cezası ağırlaşmış, on dokuz yıl hapiste kalmıştır. Çok kuvvetli bir insan olan Jean Valjean, hapiste iyi duygularını kaybetmiş gibidir.
+                    Hapisten çıkınca, mahkûm olduğunu gösteren belge yüzünden herkes ona kötü davranır. Bir piskopos onu evine alır, o ise evden gümüş takımları çalar, fakat yakalanır. Piskopos, şikayetçi olmaz, üstelik ona iki de gümüş şamdan hediye eder; onlardan elde edeceği parayı namuslu adam olma yolunda harcamasını ister. 
+                    <span id="dots2">...</span>
+                    <span id="more-text2" class="more-text">
+                    Son olay, Jean Valjean’ın yaşamında bir dönüm noktası olur. Madeleine adıyla iş hayatına atılır, zengin olur, belediye başkanı seçilir. Fantine adında düşmüş, fakat ruhça temiz bir kadını polis şefi Javert’in elinden kurtarır. Javert, birdenbire ortaya çıkan ve kısa sürede zengin olan ve herkesin “Baba” dediği Madeleine’in kim olduğunu merak eder. 
+                    Madeleine, aranmakta olan Jean Valjean diye başka birisinin yakalandığını öğrenince, kendi yerine suçsuz birinin küreğe mahkûm edilmesine gönlü razı olmaz, polis şefi Javert’e teslim olur. Jean Valjean, zindana atılır fakat yine kaçar. Bu kez Fantine’in kızı Cossette’i büyütüp yetiştirmek ister. 
+               
+                </span>
+                <button onclick="toggleText('dots2', 'more-text2', 'read-more-btn2')" id="read-more-btn2" style="color: #000033; background-color: #e6e6e6; border: none; padding: 5px; cursor: pointer;">Devamını Oku</button>
+               
+                </p>
+                <img src="../static/Victor_Hugo.jpg" class="right-image-dunyaK" width="350">
+            </div>
+            <style>
+                #more-text {
+                    display: none;
+                }
+            </style>
+            
+        </div>
+        
+    
+        <h4>Anna Karenina - Lev Tolstoy</h4>
+        <div class="images-text-wrapper-dunyaK"> 
+            <div class="dunyaEdeb">
+                <img src="../static/anna-karenina.jpg"  class="left-image-dunyaK" width="250" id="bookImage3">
+                
+                <p>
+                    Anna Karenina, Lev Tolstoy tarafından yazılmış, Rus Habercisi'nin 1873-1877 yılları arasındaki döneminde, bölümler hâlinde basılmış roman. 125 farklı yazarın belirlediği bir listede zamanımıza kadar yazılmış en iyi roman olarak görülmüştür.
+                    Romanın baş karakteri Anna Karenina, Rus aristokrasisine mensup şık ve güzel bir kadındır. Yüksek bir devlet memuru olan Aleksey Aleksandroviç Karenin ile evli ve bir çocuk sahibi olan Anna Karenina'nın sevgisiz ve monoton bir evlilik hayatı vardır.Anna Karenina, bir gün eşini aldattığı ortaya çıkan ağabeyi Prens Stepan Arkadyaviç'in (Stiva) Moskova'daki evine,
+                    <span id="dots3">...</span>
+                    <span id="more-text3" class="more-text">
+                    karı-kocayı barıştırmak üzere gider ve orada Vronski adlı bir genç kont ile tanışır. Vronski, Stiva'nın eşi Darya Aleksandrovna (Doli)'nın kız kardeşi Prenses Yekaterina Aleksandrovna Şçerbatski (Kiti)'ye kur yapan bir gençtir. Kiti, kendisine evlenme teklif eden Konstantin Dmitriyeviç Levin adlı bir başka genci, Vronski nedeniyle reddetmiştir. 
+                    Levin ve Vronski arasında kararsız kalan Kiti, sade bir çiftçi olan Levin yerine parlak geleceği olan Vronski ile evlenmesini uygun bulan annesinin etkisiyle Levin'in teklifini geri çevirmiştir. Levin, köyüne dönüp Kiti'yi unutmaya çalışır. Ne var ki, Vronski, Anna ile tanıştıktan sonra Kiti'ye ilgisini kaybeder, Anna'ya kur yapmaya başlar. 
+                    Vronski'nin ilgisini kaybetmesi ve ona karşı karşılıksız sevgi uğruna değer verdiği Levin'i yitirmesi, Kiti'nin üzüntüden hastalanmasına sebep olur. Ailesiyle birlikte gittiği bir Alman kaplıcasında sağlığına kavuşur ve Vronski'ye olan duygularını unutur.
+                    
+                    </span>
+                    <button onclick="toggleText('dots3', 'more-text3', 'read-more-btn3')" id="read-more-btn3" style="color: #000033; background-color: #e6e6e6; border: none; padding: 5px; cursor: pointer;">Devamını Oku</button>
+                    
+                </p>
+                <img src="../static/lev-tolstoy.jpg" class="right-image-dunyaK" width="250">
+            </div>
+            <style>
+                #more-text {
+                    display: none;
+                }
+            </style>
+            
+        </div>
+
+
+        
+        <h4>Aşk ve Gurur - Jane Austen</h4>
+        <div class="images-text-wrapper-dunyaK"> 
+            <div class="dunyaEdeb">
+                <img src="../static/askveguru.jpg"  class="left-image-dunyaK" width="250" id="bookImage4">
+               
+                <p>
+                    Gurur ve Önyargı (özgün adıyla Pride and Prejudice), İngiliz yazar Jane Austen'in ikinci romanıdır. Hasan Ali Yücel Klasikler dizisinden çıkan çevirisi Gurur ve Önyargı, Can Yayınları'ndan çıkan çevirisi ise Aşk ve Gurur ismiyle yayınlanmıştır.
+                    Varsıl centilmen Charles Bingley’nin Netherfield Park malikânesini kiraladığı haberi Longbourn köyü civarında özellikle Bennetlerin hanesinde büyük bir heyecana yol açar. Bennetler beş tane evlenmemiş kıza - en büyükten en küçüğe Jane, 
+                    <span id="dots4">...</span>
+                    <span id="more-text4" class="more-text">
+                    Elizabeth (Lizzy), Mary, Catherine (Kitty) ve Lydia - sahiptir ve Bayan Bennet hepsini evlenmiş görme konusunda oldukça ümitsizdir. Bay Bennet’in Bingley ile yaptığı tanışma ziyaretinden sonra Bennetler Bay Bingley’nin de bulunacağı bir balo beklentisindedirler. Beklenen balo gerçekleşir ve Bay Bingley’nin evin en büyük ve en güzel kızı Jane ile fazlaca alakadar olması özellikle Bayan Bennet’i çok mutlu eder. 
+                    Bingley’nin yakın arkadaşı Bay Darcy ise akşamdan daha az hoşnuttur ve ailenin ikinci büyük kız Elizabeth ile dans etmeyi yüksek sesle reddetmesiyle herkesin gözünde kibirli ve sevimsiz olarak yer eder.
+                
+                    </span>
+                    <button onclick="toggleText('dots4', 'more-text4', 'read-more-btn4')" id="read-more-btn4" style="color: #000033; background-color: #e6e6e6; border: none; padding: 5px; cursor: pointer;">Devamını Oku</button>
+                    
+                </p>
+                <img src="../static/Jane-Austen.jpg" class="right-image-dunyaK" width="250">
+            </div>
+            <style>
+                #more-text {
+                    display: none;
+                }
+            </style>
+           
+        </div>
+
+
+        
+        <h4>Romeo ve Juliet - William Shakespeare</h4>
+        <div class="images-text-wrapper-dunyaK"> 
+            <div class="dunyaEdeb">
+                <img src="../static/romeovejuliet.jpg" class="left-image-dunyaK" width="250" id="bookImage5">
+               
+                <p>
+                    Romeo ve Juliet Trajedisi, genellikle Romeo ve Juliet olarak kısaltılır, William Shakespeare'in kariyerinin başlarında, kavgalı ailelerden gelen iki İtalyan genci arasındaki romantizmi anlatan bir trajedidir.
+                    İtalya'nın Verona kentinde geçen oyun, hizmet ettikleri efendiler gibi yeminli düşman olan Montague ve Capulet hizmetkarları arasındaki bir sokak kavgasıyla başlar. Verona Prensi Escalus araya girer
+                    <span id="dots5">...</span>
+                    <span id="more-text5" class="more-text">
+                    ve huzuru daha fazla ihlal etmenin ölümle cezalandırılacağını ilan eder. 
+                    Daha sonra Kont Paris, Capulet ile kızı Juliet ile evlenmek hakkında konuşur, ancak Capulet Paris'ten iki yıl daha beklemesini ister ve onu planlanan bir Capulet balosuna davet eder. Leydi Capulet ve Juliet'in dadısı, Juliet'i Paris'in kur yapmasını kabul etmesi için ikna etmeye çalışır, ama Juliet onunla evlenmeye pek istekli değildir.
+                
+                    </span>
+                    <button onclick="toggleText('dots5', 'more-text5', 'read-more-btn5')" id="read-more-btn5" style="color: #000033; background-color: #e6e6e6; border: none; padding: 5px; cursor: pointer;">Devamını Oku</button>
+                    
+                </p>
+                <img src="../static/william-shakespeare.jpg" class="right-image-dunyaK" width="250">
+            </div>
+            <style>
+                #more-text {
+                    display: none;
+                }
+            </style>
+           
+        </div>
+        <br>
+
+
+        
+        <h4>Babalar ve Oğullar - Ivan Turgenyev</h4>
+        <div class="images-text-wrapper-dunyaK"> 
+            <div class="dunyaEdeb">
+                <img src="../static/babalarveogulları.jpg"  class="left-image-dunyaK" width="250" id="bookImage6">
+                
+                <p>
+                    Babalar ve Oğullar, İvan Turgenyev’in 1862'de kaleme aldığı en meşhur eseridir.İnsani duygular ile yüzleşmek, özellikle de Anna Odintsova'ya aşık olmak Bazarov'un nihilizmini paramparça eder. Bazarov'un nihilizmi, karşılıksız aşktan duyduğu ızdırap ile savaşmaya yetmez ve bu ona, iddialarına sıkı sıkıya sarılacak güçte olmadığı umutsuzluğunu aşılar.
+                    Odintsova tarafından reddedilen Bazarov ailesinin yanına döner. Bazarov, Arkadi' ye şu şekilde yakınmaktadır:  
+                    <span id="dots6">...</span>
+                    <span id="more-text6" class="more-text">
+                    "ailem, hayat ile o kadar meşgul ki, kendi anlamsızlıklarını bile önemsemez hale gelmişler, hiç ama hiç umurlarında değil... Ben ise... Sadece sıkıntı ve öfke hissediyorum. 
+                    "Duyguları ile baş edemediği fikri O'nu derin bir üzüntüye ve hayata karşı ilgisizliğe mahkûm eder.
+                
+                    </span>
+                    <button onclick="toggleText('dots6', 'more-text6', 'read-more-btn6')" id="read-more-btn6" style="color: #000033; background-color: #e6e6e6; border: none; padding: 5px; cursor: pointer;">Devamını Oku</button>
+                                
+                </p>
+                <img src="../static/Turgenev.jpg" class="right-image-dunyaK" width="250">
+            </div>
+            <style>
+                #more-text {
+                    display: none;
+                }
+            </style>
+
+        </div>
+        
+        <h4>Ana - Maksim Gorki</h4>
+        <div class="images-text-wrapper-dunyaK"> 
+            <div class="dunyaEdeb">
+                <img src="../static/ana.jpg"  class="left-image-dunyaK" class="left-image-dunyaK" width="250" id="bookImage7">
+                 
+                <p>
+                    Ana, Maksim Gorki'nin 1906'da Amerika'daki sürgününde yazdığı romandır.Kitabın ana karakteri olan "Pelage" veya bir başka deyişle "Ana", kendisini sürekli döven işçi kocasının ölümünden sonra oğlu Pavel ile başbaşa kalır. Bir süre sonra oğlunu, o kasabadaki kavgacı/geçimsiz gençlikten farklı olarak olgun bir kişiliğe bürünürken bulur. 
+                    Bir süre sonra evleri kitaplarla dolmaya başlayınca Ana, oğlunun gizli yaşantısını merak eder. Pavel, 
+                    <span id="dots7">...</span>
+                    <span id="more-text7" class="more-text">
+                    anasını sosyalizm ile ve ezilen işçi/köylü sınıfının burjuvalarla olan çatışmasıyla tanıştırır. Pavel, artık her gün şehirden arkadaşları ile kendi evinde toplanıp sorunu çözmek için uğraşır. 
+                    Bunun yanında fabrikadaki sefil işçi hayatı üzerine konuşup bildiriler hazırlarlar.Başta ürkek davranan Ana, bir süre sonra oğlunun bu arkadaşlarıyla içli dışlı olmaya başlar. Artık o da bu yolun doğru olduğunu düşünerek bu yola oğluyla beraber baş koyar. 1905 devriminden önceki bu hazırlıklar işçileri despotizme karşı ayaklandırır ve en sonunda 1905 devrimi patlak verir. 
+                
+                    </span>
+                    <button onclick="toggleText('dots7', 'more-text7', 'read-more-btn7')" id="read-more-btn7" style="color: #000033; background-color: #e6e6e6; border: none; padding: 5px; cursor: pointer;">Devamını Oku</button>
+                    
+                </p>
+                <img src="../static/maksim-gorki.jpg" class="right-image-dunyaK" width="250">
+            </div>
+            <style>
+                #more-text {
+                    display: none;
+                }
+            </style>
+
+        </div>
+        
+
+        <h4>İki Şehrin Hikayesi - Charles Dickens</h4>
+        <div class="images-text-wrapper-dunyaK"> 
+            <div class="dunyaEdeb">
+                <img src="../static/ikisehrinhikayesi.jpg"  class="left-image-dunyaK" width="250" id="bookImage8">
+                 
+                <p>
+                    İki Şehrin Hikâyesi, Charles Dickens'ın 1859 yılında gazetelerde tefrika edilmek üzere yazdığı, konusu Fransız Devrimi esnasında ve öncesinde Paris ve Londra'da geçen romandır. 200 milyonun üzerindeki satışı ile tüm zamanların en meşhur edebiyat eserleri arasındadır.
+                    Kitapta suçsuz yere Paris'teki bir hapishanede 18 yılını geçirdikten sonra, eski bir dostunun yardımı ile kurtulan Dr. Manette'in tesadüfen Londra'ya dönüşü sırasında
+                    <span id="dots8">...</span>
+                    <span id="more-text8" class="more-text">
+                    tanıştıkları bir Fransız olan Charles Darnay ile kızının yapacakları evlilik ve bunun ardından meydana gelen Fransız İhtilali'nin hayatlarına etkileri anlatılır. 
+                    Bu insanların ruhsal değişimlerini ele alan kitapta birçok tarihi izlere de rastlayabiliriz. Olayların akışı ve birbirleri ile bağlantıları romanda okuyucunun merakını son sayfaya kadar sürükleyen bir hızla sürer. Manette'in kızının sevgisine verdiği değer yüzünden içine atıp gömdüğü ancak unutamadığı intikam hisleri, kendisini bu duruma düşüren insanların soyundan gelen birisine kızını verebilmesi ilgi çekicidir.
+                
+                    </span>
+                    <button onclick="toggleText('dots8', 'more-text8', 'read-more-btn8')" id="read-more-btn8" style="color: #000033; background-color: #e6e6e6; border: none; padding: 5px; cursor: pointer;">Devamını Oku</button>
+                    
+                </p>
+                <img src="../static/charles-dickens.jpg" class="right-image-dunyaK" width="250">
+            </div>
+            <style>
+                #more-text {
+                    display: none;
+                }
+            </style>
+
+        </div>
+        
+
+        <h4>Savaş ve Barış - Lev Tolstoy</h4>
+        <div class="images-text-wrapper-dunyaK"> 
+            <div class="dunyaEdeb">
+                <img src="../static/savasvebaris.jpg" class="left-image-dunyaK" width="250" id="bookImage9">
+                 
+                <p>
+                    Savaş ve Barış, Rus yazar Lev Tolstoy tarafından yazılmış ve ilk kez 1869 yılında yayınlanmış roman. Roman dünya edebiyatının en önemli başarılarından ve önemli eserlerinden biri olarak değerlendirilir.Roman 1805 yılında Petersburg'da, Mariya Pavlovna tarafından kraliçe Ana Mariya Fyodrovna'nın onuruna verilen ziyafetle başlar. 
+                    Romanda yer alan esas karakterlerin çoğunluğu ve asil ailelerin temsilcileri Anna Pavlovnan'ın meclisinde katılırlar. Pierre Bezuxov, Prens Bezuxov'un yasadışı doğmuş oğludur. Birçokları Pierre, zengin mirasın 
+                    <span id="dots9">...</span>
+                    <span id="more-text9" class="more-text">
+                    tek varisi olduğu için yaranmaya çalışırlar. Annesinin ölümünden sonra, yüksek eğitim alması babasının maddi desteği ile sağlanmış Pierre, açık yürekli, fakat yüksek toplum içinde kendini gösteremeyen, 
+                    kendisinin saf ve naif huyu ile Petersburg asalet hayatına uyumda zorlanan biridir. Ziyafete davet edilen misafirlerin hepsi bilir ki, Pierre, babasının tüm çocukları arasında en çok sevdiği oğludur.
+                
+                    </span>
+                    <button onclick="toggleText('dots9', 'more-text9', 'read-more-btn9')" id="read-more-btn9" style="color: #000033; background-color: #e6e6e6; border: none; padding: 5px; cursor: pointer;">Devamını Oku</button>
+                    
+                </p>
+                <img src="../static/lev-tolstoy.jpg" class="right-image-dunyaK" width="250">
+            </div>
+            <style>
+                #more-text {
+                    display: none;
+                }
+            </style>
+
+        </div>
+        
+        
+        <h4>Kırmızı ve Siyah - Stendhal</h4>
+        <div class="images-text-wrapper-dunyaK"> 
+            <div class="dunyaEdeb">
+                <img src="../static/Kirmizi-ve-Siyah.jpg"  class="left-image-dunyaK" width="250" id="bookImage10">
+                 
+                <p>
+                    Kırmızı ve Siyah (Fransızca: Le Rouge et le Noir), Fransız yazar Stendhal'ın romanı.Julien Sorel, kereste fabrikası sahibinin oğlu olan, hırslı bir genç adamdır. Franche-Comté'de küçük bir kasaba olan Verrières'de yaşamaktadır. Napolyon'un ateşli bir hayranıdır.
+                    Julien, kasabanın muhafazakar belediye başkanı Mösyö Rênal'in evinde öğretmen olarak çalışmaya başlar. Bu sırada ev sahibesi Madam de Rênal 
+                    <span id="dots10">...</span>
+                    <span id="more-text10" class="more-text">
+                    ile aşk yaşar. Kentte söylentilerin yayılması üzerine Julien, Besançon'da bulunan kilisede çalışmaya gider.
+                    Burada Julien güçlü arkadaşlıklar kurmayı başarır. Sonunda De la Mole Markisi'nin dikkatini çeker ve onun evinde katip olarak işe başlar. Marki'nin kızı Mathilde, Julien'e aşık olur, fakat aşkı ile sosyal konumu arasında kalır.
+                
+                    </span>
+                    <button onclick="toggleText('dots10', 'more-text10', 'read-more-btn10')" id="read-more-btn10" style="color: #000033; background-color: #e6e6e6; border: none; padding: 5px; cursor: pointer;">Devamını Oku</button>
+                    
+                </p>
+                <img src="../static/Stendhal.jpg" class="right-image-dunyaK" width="250">
+            </div>
+            <style>
+                #more-text {
+                    display: none;
+                }
+            </style>
+
+        </div>
+        
+
+        <h4>Üç Silahşörler - Alexandre Dumas</h4>
+        <div class="images-text-wrapper-dunyaK"> 
+            <div class="dunyaEdeb">
+                <img src="../static/ucsilahsorler.jpg"  class="left-image-dunyaK" width="250" id="bookImage11">
+                 
+                <p>
+                    Üç Silahşorlar, Alexandre Dumas tarafından yazılmış olan tarihi macera romanı.1625 yılı nisan ayında Meung kasabasında Şen Değirmenci Hanı yakınında bir kavga çıkar. Kavganın nedeni, GaskonyaIı olduğu belli Dartanyan adında tuhaf görünüşlü genç adamdır. 
+                    Bu genç, şövalye olmayı hayal etmiş ama başaramamış olan babasının ona verdiği bir tavsiye mektubu ve uzun bir kılıçla, uyuz bir atın sırtında Paris’e gitmek üzere yola çıkmış; bu kasabaya kadar gelmişti. Genç, komik görünümü ile alay eden kasabalılarla dövüşür; Hancı ve adamlarının sopalarla saldırması üzerine bayılır. 
+                    <span id="dots11">...</span>
+                    <span id="more-text11" class="more-text">
+                    Hancı ile Kardinal’in adamları cebinde Kralın Muhafız Komutanı Treville’e yazılmış mektubu bulup alırlar.Genç ayıldığında handan ayrılır; Paris’e ulaşır ve babasının dostu olan Mösyö de Treville’in karargahını bulur. Ona başından geçenleri anlatır. Karargahın avlusunda mektubu çalan adamı görüp peşine düşer ancak adamı yakalamak için koşarken iki kişiye çarpar,
+                    ardından bir mendil meselesi yüzünden üçüncü kişi ile tartışır; her biri birinden habersiz olarak onu düelloya davet eder. Bu kişiler ünlü silahşorlar Athos, Porthos ve Aramis’tir.
+                
+                    </span>
+                    <button onclick="toggleText('dots11', 'more-text11', 'read-more-btn11')" id="read-more-btn11" style="color: #000033; background-color: #e6e6e6; border: none; padding: 5px; cursor: pointer;">Devamını Oku</button>
+                    
+                </p>
+                <img src="../static/Alexandre_Dumas.jpg" class="right-image-dunyaK" width="250">
+            </div>
+            <style>
+                #more-text {
+                    display: none;
+                }
+            </style>
+            
+        </div>
+        
+
+        <script>
+
+                document.addEventListener("DOMContentLoaded", function() {
+                        toggleText('dots1', 'more-text1', 'read-more-btn1')
+                        toggleText('dots2', 'more-text2', 'read-more-btn2')
+                        toggleText('dots3', 'more-text3', 'read-more-btn3')
+                        toggleText('dots4', 'more-text4', 'read-more-btn4')
+                        toggleText('dots5', 'more-text5', 'read-more-btn5')
+                        toggleText('dots6', 'more-text6', 'read-more-btn6')
+                        toggleText('dots7', 'more-text7', 'read-more-btn7')
+                        toggleText('dots8', 'more-text8', 'read-more-btn8')
+                        toggleText('dots9', 'more-text9', 'read-more-btn9')
+                        toggleText('dots10', 'more-text10', 'read-more-btn10')
+                        toggleText('dots11', 'more-text11', 'read-more-btn11');  // Sayfa yüklenirken metni kısalt
+                    });
+                function toggleText(dotsId, moreTextId, btnId) {
+                var dots = document.getElementById(dotsId);
+                var moreText = document.getElementById(moreTextId);
+                var btnText = document.getElementById(btnId);
+            
+                if (moreText.style.display === "none") {
+                    moreText.style.display = "inline";
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Daha Az Göster";
+                } else {
+                    moreText.style.display = "none";
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Devamını Oku";
+                }
+            }
+            </script>
+       
+    </section>
+
+ 
+    <script>
+        // Sayfa yüklendiğinde localStorage'dan mevcut favorileri al
+        let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+    
+        function addToFavorites(imageId) {
+            const imageSrc = document.getElementById(imageId).src;
+            
+            if (!favorites.includes(imageSrc)) {
+                favorites.push(imageSrc);
+                alert("Kitap favorilere eklendi!");
+            } else {
+                favorites = favorites.filter(fav => fav !== imageSrc); // Favorilerden çıkar
+                alert("Kitap favorilerden çıkarıldı!");
+            }
+            
+            localStorage.setItem('favorites', JSON.stringify(favorites)); // Favorileri localStorage'a kaydet
+            displayFavorites(); // Favorileri güncelle
+        }
+    
+        function displayFavorites() {
+            const favoritesDisplay = document.getElementById('favoritesDisplay');
+            favoritesDisplay.innerHTML = ''; // Önceki içerikleri temizle
+    
+            favorites.forEach(src => {
+                const img = document.createElement('img');
+                img.src = src;
+                img.className = 'favorite-image'; // CSS sınıfı
+                favoritesDisplay.appendChild(img);
+            });
+        }
+    
+        // Sayfa yüklendiğinde favorileri göster
+        displayFavorites();
+    </script>
+    
+    
+    <footer style="color: whitesmoke; font-weight:700;">
+        <p>&copy; 2024 Kitap Önerileri. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+</body>
+</html>

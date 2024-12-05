@@ -1,0 +1,455 @@
+body {
+    margin: 0; /* Varsayılan kenar boşluklarını sıfırlayın */
+    padding: 0; /* Varsayılan iç boşlukları sıfırlayın */
+    padding-left: 40px; /* Sol boşluk */
+    padding-right: 40px; /* Sağ boşluk */
+}
+
+
+
+.hakkimizda-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000; /* Yazı rengi siyah */
+    position: relative;
+    background-color: white; /* Arka plan beyaz */
+}
+
+.dunyaK-body {
+    background-image: url("dunyawalpaper2.jpg");
+   
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000033; /* Yazı rengi siyah */
+    position: relative;
+    background-color: white; /* Arka plan beyaz */
+}
+
+.turkE-body {
+    background-image: url("turkiyek-walpaper.jpg");
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000033; /* Yazı rengi siyah */
+    position: relative;
+    background-color: white; /* Arka plan beyaz */
+}
+
+.bilimK-body {
+    background-image: url("bilimk-walpaper3.jpg");
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000033; /* Yazı rengi siyah */
+    position: relative;
+    background-color: white; /* Arka plan beyaz */
+}
+
+.polisiye-body {
+    background-image: url("polisiye-arkaplan.jpg");
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000033; /* Yazı rengi siyah */
+    position: relative;
+    background-color: white; /* Arka plan beyaz */
+}
+
+.romanlar-body {
+    background-image: url("romanlar-walpaper2.jpg");
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000033; /* Yazı rengi siyah */
+    position: relative;
+    background-color: white; /* Arka plan beyaz */
+}
+
+.romanlar-body h4{
+    color:#000;
+}
+
+.siir-body {
+    background-image: url("siir-walpaper.jpg");
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000033; /* Yazı rengi siyah */
+    position: relative;
+    background-color: white; /* Arka plan beyaz */
+}
+
+.favori-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000; /* Yazı rengi siyah */
+    position: relative;
+    background-color: white; /* Arka plan beyaz */
+}
+
+header {
+    background: rgba(255, 255, 255, 0.8); /* Saydam beyaz arka plan */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* İçerikleri sağa ve sola ayır */
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px; /* Başlık boyutunu ayarla */
+    margin: 0;
+    color: #000; /* Siyah yazı */
+}
+
+nav {
+    text-align: center; /* Navigasyonu ortaya hizala */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Butonları ortala */
+    gap: 20px; /* Butonlar arası boşluk */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #000; /* Yazı rengi siyah */
+    text-decoration: none;
+    font-size: 18px; /* Yazı boyutunu büyüt */
+    padding: 15px 25px; /* Buton içindeki boşlukları artır */
+    transition: background-color 0.3s;
+    border-radius: 5px; /* Kenarları yuvarlat */
+}
+
+nav ul li a:hover {
+    background-color: #000033; /* Üzerine gelince arka plan rengi koyu mavi */
+    color: white; /* Üzerine gelince yazı rengi beyaz olsun */
+}
+
+.centered-image {
+    display: block; /* Resmi blok öğesi yapar */
+    margin: 20px auto; /* Dikeyde 20px boşluk bırakır ve yatayda ortalar */
+    width: 80%; /* Genişliği %80 olarak ayarlar */
+    max-width: 1700px; /* Daha büyük ekranlar için maksimum genişliği 600px olarak ayarlar */
+    /*height: 900px; /* Oranını koruyarak yüksekliği ayarlar */
+}
+
+.image-container {
+    background-color: #000033; /* Arka plan rengi */
+    padding: 20px; /* Resmin etrafındaki boşluk */
+    display: inline-block; /* Resmin boyutuna göre kapsayıcıyı ayarlar */
+    border-radius: 10px; /* Kenarları yuvarlatmak için isteğe bağlı */
+}
+
+
+section {
+    margin: 40px auto; /* Ortalamak için */
+    padding: 20px; /* İçerik için boşluk */
+    background: #000033; /* Daha koyu lacivert arka plan */
+}
+
+#sectionDunyaK {
+    margin: 40px auto; /* Ortalamak için */
+    padding: 20px; /* İçerik için boşluk */
+    background: #000033; /* Daha koyu lacivert arka plan */
+
+}
+
+#sectionDunyaK h4 {
+    color: white; /* Yazı rengini beyaz yap */
+}
+
+#sectionDunyaK p {
+    color: #000033;
+}
+
+
+
+
+
+#sectionturkE {
+    margin: 40px auto; /* Ortalamak için */
+    padding: 20px; /* İçerik için boşluk */
+    /*background: brown; /* Daha koyu lacivert arka plan */
+}
+
+
+
+.TurkEdeb1 img, 
+.TurkEdeb2 img,
+.TurkEdeb3 img,
+.TurkEdeb4 img,
+.TurkEdeb5 img,
+.TurkEdeb6 img,
+.TurkEdeb7 img,
+.TurkEdeb8 img {
+    width: auto; /* Resim genişliği */
+    height: 400px; /* Resim yüksekliği */
+    margin-right: 20px; /* Resim ile metin arasında boşluk */
+    transition: transform 0.3s ease; /* Geçiş efekti */
+}
+
+
+.TurkEdeb1 img:hover,
+.TurkEdeb2 img:hover,
+.TurkEdeb3 img:hover,
+.TurkEdeb4 img:hover,
+.TurkEdeb5 img:hover,
+.TurkEdeb6 img:hover,
+.TurkEdeb7 img:hover,
+.TurkEdeb8 img:hover,
+.book-image {
+    transform: scale(1.05); /* Üzerine gelindiğinde %5 büyüt */
+}
+
+h2 {
+    text-align: center; /* h2 metnini ortala */
+    font-size: 48px; /* Yazı boyutunu 36 piksel olarak artır */
+    margin: 20px 0; /* Dikey boşluk ekle */
+    font-family: Garamond; /* Garamond yazı tipini kullan */
+}
+
+h3 {
+    text-align: center; /* h2 metnini ortala */
+    font-size: 30px; /* Yazı boyutunu 36 piksel olarak artır */
+    margin: 20px 0; /* Dikey boşluk ekle */
+    font-family: Garamond; /* Garamond yazı tipini kullan */
+}
+
+
+
+
+.TurkEdeb1,
+.TurkEdeb2,
+.TurkEdeb3,
+.TurkEdeb4,
+.TurkEdeb5,
+.TurkEdeb6,
+.TurkEdeb7,
+.TurkEdeb8 {
+    display: flex; /* Flexbox kullanarak içerikleri hizalayın */
+    align-items: flex-start; /* Dikey hizalama (alt tarafa hizalama) */
+    margin: 0 10px; /* Sağdan ve soldan boşluk */
+    padding: 15px; /* İç boşluk */
+    flex-wrap: wrap; /* İçerik taşarsa yeni satıra geçmesini sağlar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hafif gölgelendirme */
+}
+
+
+
+
+
+.TurkEdeb1 h4,
+.TurkEdeb2 h4,
+.TurkEdeb3 h4,
+.TurkEdeb4 h4,
+.TurkEdeb5 h4,
+.TurkEdeb6 h4,
+.TurkEdeb7 h4,
+.TurkEdeb8 h4 {
+    color: #000; /* Siyah başlıklar */
+    margin-top: 10px; /* Üst boşluk */
+    font-weight: bold; /* Kalın yazı */
+}
+
+.TurkEdeb1 h4,
+.TurkEdeb2 h4,
+.TurkEdeb3 h4,
+.TurkEdeb4 h4,
+.TurkEdeb5 h4,
+.TurkEdeb6 h4,
+.TurkEdeb7 h4,
+.TurkEdeb8 h4 {
+    color: #000; /* Siyah başlıklar */
+    margin-top: 10px; /* Üst boşluk */
+    font-weight: bold; /* Kalın yazı */
+}
+
+
+
+.dunyaEdeb {
+    display: flex; /* Flexbox kullanarak yan yana hizalama */
+    align-items: flex-start; /* Dikey hizalamayı üstten başlat */
+    justify-content: space-between; /* İçerikleri aralarındaki boşluğu eşit dağıt */
+}
+
+.images-text-wrapper-dunyaK {
+    display: flex; /* Flexbox ile yan yana hizala */
+    align-items: flex-start; /* Üst kenar hizalaması */
+    margin: 20px 0; /* Üst ve alt boşluk ekle */
+}
+
+.right-image-dunyaK {
+    width: 300px;
+    border: 20px solid white; /* 10px genişliğinde siyah çerçeve */
+    margin-left: auto; /* Sağ tarafa itmek için otomatik margin */
+    transition: transform 0.3s; /* Geçiş süresi */
+}
+
+.left-image-dunyaK {
+    margin-right: 20px; /* Resim ile metin arasında boşluk */
+    transition: transform 0.3s; /* Geçiş süresi */
+}
+
+.left-image-dunyaK:hover,
+.right-image-dunyaK:hover,
+.left-image:hover, 
+.right-image:hover,
+.right-image-turkEdeb:hover,
+.right-image-siir:hover,
+.right-image-roman:hover {
+    transform: scale(1.1); /* Büyütme oranı */
+}
+
+.images-text-wrapper {
+    display: flex; /* Flexbox ile yan yana hizala */
+    align-items: flex-start; /* Üst kenar hizalaması */
+    margin: 20px 0; /* Üst ve alt boşluk ekle */
+}
+
+.right-image {
+    border: 20px solid black; /* 10px genişliğinde siyah çerçeve */
+    /*padding: 10px; /* Çerçeve ile içerik arasında boşluk */
+    margin-left: auto; /* Sağ tarafa itmek için otomatik margin */
+    transition: transform 0.3s; /* Geçiş süresi */
+}
+
+.right-image-turkEdeb {
+    border: 20px solid whitesmoke; /* 10px genişliğinde siyah çerçeve */
+    /*padding: 10px; /* Çerçeve ile içerik arasında boşluk */
+    margin-left: auto; /* Sağ tarafa itmek için otomatik margin */
+    transition: transform 0.3s; /* Geçiş süresi */
+}
+
+.right-image-roman {
+    border: 20px solid #E4CDA7; /* 10px genişliğinde siyah çerçeve */
+    /*padding: 10px; /* Çerçeve ile içerik arasında boşluk */
+    margin-left: auto; /* Sağ tarafa itmek için otomatik margin */
+    transition: transform 0.3s; /* Geçiş süresi */
+}
+
+.right-image-siir {
+    border: 20px solid #3E2B2B; /* 10px genişliğinde siyah çerçeve */
+    /*padding: 10px; /* Çerçeve ile içerik arasında boşluk */
+    margin-left: auto; /* Sağ tarafa itmek için otomatik margin */
+    transition: transform 0.3s; /* Geçiş süresi */
+}
+
+.left-image {
+    margin-right: 20px; /* Resim ile metin arasında boşluk */
+    transition: transform 0.3s; /* Geçiş süresi */
+}
+
+
+.dunyaEdeb p {
+    flex: 1; /* Paragraf, kalan alanı kaplar */
+    text-align: justify; /* Metni iki tarafa yasla */
+    background: rgba(255, 255, 255, 0.8); /* Saydam beyaz arka plan */
+    padding: 10px; /* İç boşluk */
+    border-radius: 5px; /* Kenarları yuvarlat */
+    margin: 0 20px; /* Dikey boşluk ekle ve kenar boşlukları */
+    max-width: 800px; /* Paragraf genişliğini 400px ile sınırla */
+    /* veya */
+    width: 70%; /* Paragraf genişliğini %70 yap */
+    font-size: 1.2em; /* İstediğiniz boyut için em değerini ayarlayın */
+    line-height: 1.5; /* Satır yüksekliğini ayarlamak için isteğe bağlı */
+    color: #000033; /* Yazı rengini ayarla */
+    
+}
+
+.TurkEdeb1 p {
+    flex: 1; /* Paragraf, kalan alanı kaplar */
+    text-align: justify; /* Metni iki tarafa yasla */
+    background: rgba(255, 255, 255, 0.8); /* Saydam beyaz arka plan */
+    padding: 10px; /* İç boşluk */
+    border-radius: 5px; /* Kenarları yuvarlat */
+    margin: 0 20px; /* Dikey boşluk ekle ve kenar boşlukları */
+    max-width: 800px; /* Paragraf genişliğini 400px ile sınırla */
+    /* veya */
+    width: 70%; /* Paragraf genişliğini %70 yap */
+    font-size: 1.2em; /* İstediğiniz boyut için em değerini ayarlayın */
+    line-height: 1; /* Satır yüksekliğini ayarlamak için isteğe bağlı */
+    color: #000033; /* Yazı rengini ayarla */
+    
+}
+
+.TurkEdeb2 p,
+.TurkEdeb3 p,
+.TurkEdeb4 p,
+.TurkEdeb5 p,
+.TurkEdeb6 p,
+.TurkEdeb7 p,
+.TurkEdeb8 p {
+    flex: 1; /* Paragraf, kalan alanı kaplar */
+    text-align: justify; /* Metni iki tarafa yasla */
+    background: rgba(255, 255, 255, 0.8); /* Saydam beyaz arka plan */
+    padding: 10px; /* İç boşluk */
+    border-radius: 5px; /* Kenarları yuvarlat */
+    margin: 0 20px; /* Dikey boşluk ekle ve kenar boşlukları */
+    max-width: 800px; /* Paragraf genişliğini 400px ile sınırla */
+    /* veya */
+    width: 70%; /* Paragraf genişliğini %70 yap */
+    font-size: 1.2em; /* İstediğiniz boyut için em değerini ayarlayın */
+    line-height: 1.5; /* Satır yüksekliğini ayarlamak için isteğe bağlı */
+    color: #000033; /* Yazı rengini ayarla */
+    
+}
+
+
+
+
+
+
+.kalp {
+	animation: kalp 1s steps(28);
+	background: url(https://cssanimation.rocks/images/posts/steps/heart.png) no-repeat;
+	background-position: 0 0;
+	cursor: pointer;
+	height: 100px;
+	width: 100px;
+}
+
+.kalp:hover {
+	background-position: -2800px 0;
+	transition: background 1s steps(28);
+}
+
+@keyframes kalp {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: -2800px 0;
+	}
+}
+
+
+
+.favorites-display {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Satıra sığmayan resimleri bir alt satıra alır */
+    gap: 10px; /* Resimler arasındaki boşluk */
+}
+
+.favorite-image {
+    border: 10px solid black; /* Siyah çerçeve */
+    padding: 5px; /* Çerçeve ile resim arasında boşluk */
+}
+
+footer {
+    display: flex;
+    justify-content: center; /* Yatayda ortalamak için */
+    align-items: center; /* Dikeyde ortalamak için */
+    height: 100px; /* Footer yüksekliğini belirleyebilirsiniz */
+  }
+  

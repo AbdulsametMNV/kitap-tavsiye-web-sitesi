@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanıcılar</title>
+    <link rel="stylesheet" href="../static/styles-index.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #333;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 10px 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+        }
+        td {
+            text-align: center;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        button {
+            padding: 5px 10px;
+            background-color: #f44336;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        button:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+
+        <h1 style="font-family: Garamond; color: #000033 ;"><i>PUERTAS</i></h1>
+   
+        <nav>
+            <br>
+            <ul>
+                <li><a href="/">Anasayfa</a></li>
+                <li><a href="/hakkimizda">Hakkımızda ve İletişim</a></li>
+                
+                {% if session.get('username') %}
+                    {% if session.get('username') == 'admin' %}
+                        <li><a href="/kullanicilar">Kullanıcılar</a></li>
+                    {% endif %}
+                    <li>Merhaba, {{ session['username'] }}</li>
+                    <li><a href="{{ url_for('logout') }}">Çıkış Yap</a></li>
+                {% else %}
+                    <li><a href="/login">Katıl</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+        
+    </header>
+    <h1 style="text-align: center;">Kullanıcılar</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Ad</th>
+                <th>Sil</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+            <tr>
+                <td>{{ user['id'] }}</td>
+                <td>{{ user['username'] }}</td>
+                <td>
+                    <form action="/delete/{{ user['id'] }}" method="POST" style="margin: 0;">
+                        <button type="submit">Sil</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

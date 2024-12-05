@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kitap Önerileri</title>
+        <link rel="stylesheet" href="../static/styles.css"> <!-- CSS dosyasını bağlama -->
+        <script src="../static/scripts.js" defer></script> <!-- JavaScript dosyasını ekle -->
+    </head>
+    
+<body class="turkE-body"> <!-- class ekleyin -->
+    <header >
+        <div class="header-container">
+            <img src="../static/turke1.jpg" alt="Sol Resim" class="side-image left"  height="250"> <br>
+            
+        </div>
+        <div >
+            <nav >
+                <ul>
+                    <li><a href="/">Anasayfa</a></li>
+                    <li><a href="/dklasik">Dünya Klasikleri</a></li>
+                    <li><a href="/bilimk">Bilim Kurgu</a></li>
+                    <li><a href="/polisiye">Polisiye</a></li>
+                    <li><a href="/romanlar">Romanlar</a></li>
+                    <li><a href="/siirler">Şiirler</a></li>
+                </ul>
+            </nav>
+        </div>
+        <img src="../static/turke2.jpg" alt="Sağ Resim" class="side-image right" width="200" height="250">
+    </header>
+    
+    <h2 style="font-family: Garamond; color: whitesmoke;">Türkiye Edebiyatında İlkler</h2>
+    <section style="background-color:#4B2C16;" id="sectionturkE" >
+    
+        <article style="background-color:#6A3F2F">
+
+            <h4 style="font-family: Arial, sans-serif; color: white;">İlk Edebî Roman: İntibah (1876), Namık Kemal</h4>
+            <div class="images-text-wrapper"> 
+                <div class="TurkEdeb1">
+                    <img src="../static/intibah.jpg"  class="left-image" width="250" id="bookImage12">
+                    
+                        <p style="color: #000033;">İntibah ya da diğer adıyla Sergüzeşt-i Ali Bey, Namık Kemal'in, Gazimağusa'da sürgündeyken yazdığı, ilk kez 1876'da yayımlanan bir romanı.
+                            Roman karakteri Ali Bey, varlıklı bir ailenin tek çocuğudur. İyi bir eğitim hayatı geçirmiş, on yaşına gelinceye kadar birkaç dil öğrenmiştir. Ali Bey, yirmili yaşlara geldiğinde babası ölür, bundan sonra daha rahat ve keyfi bir yaşam sürer. 
+                            Çamlıca'daki bir gezintisinde bir kadınla tanışır. Kadını oldukça çekici bulur fakat bu kadın Ali Bey'e pek uygun değildir. Adı Mahpeyker olan bu kadın Suriye'de kötü işler yaparak zengin olan Abdullah Efendi ile birlikte dost hayatı sürdürmektedir. 
+                            Ali Bey'in annesi oğlunun böyle bir kadını beğenmesini kabul etmez ve evlerine Dilaşup adında genç ve güzel bir cariyeyi çağırır fakat oğlunu vazgeçiremez. Ali Bey bir gün yalıya gider fakat Mahpeyker'i evinde bulamaz. Mahpeyker, Abdullah Efendi ile buluşmaya gitmiştir.
+                            <span id="dots12">...</span>
+                            <span id="more-text12" class="more-text">
+                            Bütün gece yalıda Mahpeyker'i bekler, sabah olunca da onunla karşılaşır ve kavga eder, daha sonra ayrılırlar. Bu noktadan sonra Ali Bey, cariye olan Dilaşup'la ilgilenmeye başlar. Mahpeyker ise Abdullah Efendi ile birlikte Dilaşup'a karşı bir plan yapar. 
+                            Bazı erkekler Ali Bey'e bu plan dahilinde bir şeyler söyler, Ali Bey buna sinirlenir ve Dilaşup'u döver. Artık Ali Bey hastalanır ve Dilaşup'u bir esirciye satar. Dilaşup'u esirciden alan kişi ise Mahpeyker olur ve onu kötü düşüncelere sevk etmek ister fakat Dilaşup buna direnç göstermektedir. 
+                            İlerleyen dönemlerde Ali Bey mal varlığını kaybetmiş duruma gelir, Annesi ise bir kiralık evde hayatını kaybeder. Daha sonraları Mahpeyker Ali Bey'i öldürmek ister ve bunun için bir plan yapar. Planı, Çamlıca'daki bir eğlencede Ali Bey'i bıçaklatıp öldürtmektir.
+                            Bunu haber alan Dilaşup ise eğlenceye katılan Ali Bey'e haber verir. Ali Bey hemen bir çarşaf giyerek karakola gider. Bu esnada Ali Bey'in paltosunu giyen Dilaşup, Ali Bey sanılarak öldürülür. Zaptiyelerle geri dönen Ali Bey, Dilaşup'un ölümünü kabullenemez ve Mahpeyker'i öldürür. Hapishaneye giren Ali Bey, altı ay sonra hayatını kaybeder.
+                        </span>
+                        <button onclick="toggleText('dots12', 'more-text12', 'read-more-btn12')" id="read-more-btn12" style="color: #000033; background-color: #e6e6e6; border: none; padding: 5px; cursor: pointer;">Devamını Oku</button>
+                        </p>
+
+                        <img src="../static/Namik-Kemal.jpg" class="right-image-turkEdeb" width="250">
+                </div>
+                <style>
+                    #more-text {
+                        display: none;
+                    }
+                </style>
+            
+            </div>
+        </article>
+        
+
+        <article style="background-color:#6A3F2F">
+            <h4 style="  font-family: Arial, sans-serif; color: white;" >İlk Psikolojik Roman: Eylül (1901), Mehmet Rauf</h4> 
+            <div class="images-text-wrapper"> 
+                <div class="TurkEdeb2">
+                    <img src="../static/eylul.jpg"  class="left-image" width="250" id="bookImage13">
+                    
+                        <p style="color: #000033;">Eylül, Mehmet Rauf'un ilk psikolojik roman olarak Türk tarihine geçen romanı. Ayrıca bireyin öznel yaşantısını doğrudan konu alan ilk roman olarak da bilinir.
+                            Eserin konusu, evli bir çift olan Suat Hanım ve Süreyya Bey'in Boğaziçi'nde kiraladıkları küçük bir yalıda geçen mutlu günlerinin, Süreyya'nın arkadaşı Necip'in gelişiyle değişmesini ele alır. Necip, zamanla Suat Hanım'a karşı derin bir aşk beslemeye başlar. 
+                            Bu aşk, hem Necip'in hem de Suat Hanım'ın iç dünyalarında büyük bir çatışmaya yol açar. Necip, arkadaşına ihanet etmenin verdiği üzüntüyle mücadele ederken, Suat Hanım da evliliğinde aradığı mutluluğu bulamamanın sancılarını yaşar.            
+                            <span id="dots13">...</span>
+                            <span id="more-text13" class="more-text">
+                            Romanın sonunda, bir yangın felaketiyle karşı karşıya kalan karakterlerin trajik sonları, Mehmet Rauf'un kuvvetli psikolojik tahlilleriyle okuyucuya sunulur. "Eylül", sadece bir aşk hikâyesi değil, aynı zamanda bireyin iç dünyasının derinliklerine inen, dönemin toplumsal yapısını ve insan psikolojisini incelikle işleyen bir başyapıttır.
+                            Mehmet Rauf'un "Eylül" eseri, edebiyatımızda psikolojik roman türünün öncülerinden biri olarak anılmakta ve hala günümüzde de ilgiyle okunan bir eserdir.
+                        </span>
+                        <button onclick="toggleText('dots13', 'more-text13', 'read-more-btn13')" id="read-more-btn13" style="color: #000033; background-color: #e6e6e6; border: none; padding: 5px; cursor: pointer;">Devamını Oku</button>
+                    
+                        </p>
+                        <img src="../static/mehmet-rauf.jpg" class="right-image-turkEdeb" width="250">
+                </div>
+                <style>
+                    #more-text {
+                        display: none;
+                    }
+                </style>
+            </div>
+        </article>
+
+
+        <article style="background-color:#6A3F2F">
+            <h4 style="  font-family: Arial, sans-serif; color: white;">Batı Tekniğine Uygun İlk Realist Roman: Mai ve Siyah (1897), Halit Ziya Uşaklıgil</h4>
+            <div class="images-text-wrapper"> 
+                <div class="TurkEdeb3">
+                    <img src="../static/mai-siyah.jpg"  class="left-image" width="250" id="bookImage14">
+                    
+                        <p style="color: #000033;">
+                            Mai ve Siyah, edebiyatımızda Batılı anlamda gerçekçi ilk romandır. Yaşanılan bir dönemin sosyo kültürel durumu gözler önüne serilir. Romanın kahramanı Ahmet Cemil, okulu bitireceği sırada babasını kaybeder ve kendisiyle annesinden ve kız kardeşinden ibaret olan ailesini geçindirmek zorunda kalır. Bir taraftan bazı kitapları çevirip satar, bir taraftan da özel dersler verir. 
+                            Bütün bu ıstıraplı hayat şartları arasında, büyük ümitler bağladığı eserini de bitirmeye çalışır. 
+                            <span id="dots14">...</span>
+                            <span id="more-text14" class="more-text">
+                            Okuldan mezun olunca gazetelere yazı yazarak hayatını kazanmak istediği için memur olmaz. Eseri basılacak, okunacak, meşhur ve zengin olduktan sonra, okul arkadaşı olan Hüseyin Nazmi’nin kız kardeşi Lamia’yı isteyecektir.
+                            Bu sevdadan ise, kendisinden başka kimsenin haberi yoktur. O güne kadar yaşadıklarını mavi, mehtaplı bir gecede hatırından geçirir. Bütün ümitleri birer birer söner; kız kardeşi birçok dert ve sıkıntıdan sonra ölür, sevgilisi Lamia ise bir başkasıyla nişanlanır. Bu olumsuzluklardan sonra Ahmet Cemil, yazdığı ve bütün ümitlerini bağladığı eserini kendi eliyle yakar ve annesini alarak bir gece İstanbul’dan ayrılır.
+                        </span>
+                        <button onclick="toggleText('dots14', 'more-text14', 'read-more-btn14')" id="read-more-btn14" style="color: #000033; background-color: #e6e6e6; border: none; padding: 5px; cursor: pointer;">Devamını Oku</button>
+                        </p>
+                        <img src="../static/halit-ziya.jpg" class="right-image-turkEdeb" width="250">
+                </div>
+                <style>
+                    #more-text {
+                        display: none;
+                    }
+                </style>
+            </div>
+        </article>
+            
+
+        <article style="background-color:#6A3F2F">
+            <h4 style="  font-family: Arial, sans-serif; color: white;">İlk Tarihî Roman Örneği: Cezmi (1880), Namık Kemal</h4>
+            <div class="images-text-wrapper"> 
+                <div class="TurkEdeb4">
+                    <img src="../static/cezmi.jpg"  class="left-image" width="250" id="bookImage15">
+                    
+                        <p style="color: #000033;">
+                            Cezmi, Tanzimat Edebiyatı yazarlarından Namık Kemal tarafından Gazimağusa'da sürgündeyken yazılan roman. Olay döngüsü 16. yüzyılda geçmektedir. Roman karakterlerinden Cezmi, yiğit bir Osmanlı sipahisi olarak anlatılmaktadır. Cezmi aynı zamanda şair ve bilgili bir insandır. Cezmi cirit oynamada usta bir askerdir. Roman ilk olarak İstanbul'da başlar, Azerbaycan ve İran'da devam edip Tebriz Sarayı'nda sona erer. 
+                            İran ile Osmanlı İmparatorluğu arasında savaş başlamıştır. 
+                            <span id="dots15">...</span>
+                            <span id="more-text15" class="more-text">
+                            Cezmi ise bu savaşa gönüllü asker olarak katılmıştır. Cezmi ile Adil Giray bu savaş vesilesiyle tanışmışlardır. Savaşta Osmanlı orduları üstün gelmektedir fakat Adil Giray ve kardeşi Gazi Giray esir düşmüştür, bu noktadan sonra romanın büyük ve önemli bir kısmı Tebriz Sarayı'nda, Adil Giray, Perihan ve Şehriyar arasında geçmektedir. Daha sonra bu iki kadın Adil Giray'a âşık olmuştur. 
+                            Taraflar arasında ciddi mücadeleler yaşandıktan sonra Perihan, Şehriyar ve Adil Giray ölür; Cezmi ise ağır yaralanır. Daha sonra ağır yaralanan Cezmi, derviş kılığına girerek ülkesine geri döner.
+                            </span>
+                            <button onclick="toggleText('dots15', 'more-text15', 'read-more-btn15')" id="read-more-btn15" style="color: #000033; background-color: #e6e6e6; border: none; padding: 5px; cursor: pointer;">Devamını Oku</button>
+                        
+                        </p>
+                        <img src="../static/Namik-Kemal.jpg" class="right-image-turkEdeb" width="250">
+                </div>
+                <style>
+                    #more-text {
+                        display: none;
+                    }
+                </style>
+            </div>
+        </article>
+           
+        <article style="background-color:#6A3F2F">
+            <h4 style="  font-family: Arial, sans-serif; color: white;">İlk polisiye roman: Esrar-ı Cinayet (1883), Ahmet Mithat Efendi</h4>
+            <div class="images-text-wrapper"> 
+                <div class="TurkEdeb5">
+                    <img src="../static/esrari-cinayet.jpg"  class="left-image" width="250" id="bookImage16">
+                    
+                        <p style="color: #000033;">
+                            Edebiyatımızda birçok yazınsal türde eser veren Ahmet Mithat Efendi’nin Esrâr-ı Cinâyât -Cinayetlerin Sırları- adlı polisiye romanı; olayların akışındaki kurgu ustalığı ve karakterlerinin güçlü bir şekilde canlandırılmış olmasıyla yazarın övgüyü hak eden eserleri arasına girmiştir. 
+                            Bir genç kızın cesedinin bulunmasıyla başlayan roman, intihar süsü verilerek öldürülmüş ikinci bir kişinin 
+                            <span id="dots16">...</span>
+                            <span id="more-text16" class="more-text">
+                            bulunmasıyla sürükleyici şekilde devam ederken, polis şefi Osman Sabri ile Muharrir Efendi’nin işbirliği ve dikkatli takipleri sonucu bambaşka bir hale bürünür. 
+                            Dönemin adalet sistemini, yargılama usullerini rüşvet ve kayırmacılığı gözler önüne sererek eleştiren roman, yazarın usta işi üslubunu da yansıtarak şaşırtıcı bir sonla biter.
+                            </span>
+                            <button onclick="toggleText('dots16', 'more-text16', 'read-more-btn16')" id="read-more-btn16" style="color: #000033; background-color: #e6e6e6; border: none; padding: 5px; cursor: pointer;">Devamını Oku</button>
+                        
+                        </p>
+                        <img src="../static/ahmet-mithat.jpg" class="right-image-turkEdeb" width="250">
+                </div>
+                <style>
+                    #more-text {
+                        display: none;
+                    }
+                </style>
+            </div>   
+        </article>
+            
+        <article style="background-color:#6A3F2F">
+            <h4 style="  font-family: Arial, sans-serif; color: white;">Kurtuluş Savaşını Doğrudan İşleyen Romanımız- Ateşten Gömlek (1922)- Halide Edip Adıvar</h4>
+            <div class="images-text-wrapper">
+                <div class="TurkEdeb6">
+                    <img src="../static/atesten-gomlek.jpg"  class="left-image" width="250" id="bookImage17">
+                    
+                        <p style="color: #000033;">Ateşten Gömlek, Halide Edip Adıvar'ın savaş sırasında yaşanan bir aşk öyküsünü konu edinen ve 1922 yılında Kurtuluş Savaşı devam ederken tefrika edilmiş olan romanı.
+
+                            Roman, savaşta iki bacağını kaybeden ve kafasından vurulan Peyami'nin hastanede yazdığı hatıralarından oluşur. Türk edebiyatında Kurtuluş Savaşı üzerine yazılan ilk romandır.
+                            Roman baş kişisi Ayşe'nin, kocası Mukbil Bey ve çocuğu Hasan İzmir'in işgali sırasında düşman tarafından öldürülmüştür. Ayşe, İstanbul’a akrabası Peyami’nin yanına gelir. Peyami, Sultanahmet mitinginden bir gün önce gelen Ayşe'yi karşılar; ve İzmir ile özdeşleştirdiği Ayşe'nin yeşil gözlerinden etkilenir.
+                            <span id="dots17">...</span>
+                            <span id="more-text17" class="more-text">
+                            Ayşe ile Peyami'nin yanına Binbaşı İhsan da katılır ve Kuvâ-yi Milliye’ye hizmet etmek üzere Anadolu'ya geçerler. İhsan da Peyami gibi Ayşe'ye aşık olmuştur; ama İzmir’in kurtuluşunu tek aşkı ve hayali yapan Ayşe, ancak İzmir kurtarıldıktan sonra teklife cevap vereceğini söyler. 
+                            Ayşe'ye duydukları aşk, Bu aşk hem İhsan, hem Peyami için ateşten bir gömleğe dönüşür.
+                            </span>
+                            <button onclick="toggleText('dots17', 'more-text17', 'read-more-btn17')" id="read-more-btn5" style="color: #000033; background-color: #e6e6e6; border: none; padding: 5px; cursor: pointer;">Devamını Oku</button>
+                        
+                        </p>
+                        <img src="../static/halide-edip.jpg" class="right-image-turkEdeb" width="250">
+                </div>
+                <style>
+                    #more-text {
+                        display: none;
+                    }
+                </style>
+            </div>
+        </article>
+           
+
+
+            <script>
+
+                document.addEventListener("DOMContentLoaded", function() {
+                        toggleText('dots12', 'more-text12', 'read-more-btn12')
+                        toggleText('dots13', 'more-text13', 'read-more-btn13')
+                        toggleText('dots14', 'more-text14', 'read-more-btn14')
+                        toggleText('dots15', 'more-text15', 'read-more-btn15')
+                        toggleText('dots16', 'more-text16', 'read-more-btn16')
+                        toggleText('dots17', 'more-text17', 'read-more-btn17');  // Sayfa yüklenirken metni kısalt
+                    });
+                function toggleText(dotsId, moreTextId, btnId) {
+                var dots = document.getElementById(dotsId);
+                var moreText = document.getElementById(moreTextId);
+                var btnText = document.getElementById(btnId);
+            
+                if (moreText.style.display === "none") {
+                    moreText.style.display = "inline";
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Daha Az Göster";
+                } else {
+                    moreText.style.display = "none";
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Devamını Oku";
+                }
+            }
+            </script>
+    
+    </section>
+
+    <script>
+        // Sayfa yüklendiğinde localStorage'dan mevcut favorileri al
+        let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+    
+        function addToFavorites(imageId) {
+            const imageSrc = document.getElementById(imageId).src;
+            
+            if (!favorites.includes(imageSrc)) {
+                favorites.push(imageSrc);
+                alert("Kitap favorilere eklendi!");
+            } else {
+                favorites = favorites.filter(fav => fav !== imageSrc); // Favorilerden çıkar
+                alert("Kitap favorilerden çıkarıldı!");
+            }
+            
+            localStorage.setItem('favorites', JSON.stringify(favorites)); // Favorileri localStorage'a kaydet
+            displayFavorites(); // Favorileri güncelle
+        }
+    
+        function displayFavorites() {
+            const favoritesDisplay = document.getElementById('favoritesDisplay');
+            favoritesDisplay.innerHTML = ''; // Önceki içerikleri temizle
+    
+            favorites.forEach(src => {
+                const img = document.createElement('img');
+                img.src = src;
+                img.className = 'favorite-image'; // CSS sınıfı
+                favoritesDisplay.appendChild(img);
+            });
+        }
+    
+        // Sayfa yüklendiğinde favorileri göster
+        displayFavorites();
+    </script>
+
+    
+    
+    
+    <footer style="color: whitesmoke; font-weight:700;">
+        <p>&copy; 2024 Kitap Önerileri. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+
+</body>
+</html>

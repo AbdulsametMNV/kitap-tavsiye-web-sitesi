@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitap Önerileri</title>
+    <link rel="stylesheet" href="../static/styles.css"> <!-- CSS dosyasını bağlama -->
+    <script src="../static/scripts.js" defer></script> <!-- JavaScript dosyasını ekle -->
+</head>
+<body class="hakkimizda-body"> <!-- class ekleyin -->
+
+<header style="color: white;">
+    
+    <h1><i>Hakkımızda ve İletişim</i></h1>
+    <nav>
+        <ul>
+                      
+                    {% if session.get('username') %}
+                        
+                        {% if session.get('username') == 'admin' %}
+                            <li><a href="/kullanicilar">Kullanıcılar</a></li>
+                        {% endif %}
+                        <li>Merhaba, {{ session['username'] }}</li>
+                        <li><a href="/">Anasayfa</a></li>  
+                        <li><a href="{{ url_for('logout') }}">Çıkış Yap</a></li>
+                    {% else %}
+                        <li><a href="/login">Katıl</a></li>
+                    {% endif %}
+            
+        </ul>
+    </nav>
+</header>
+
+
+
+<main>
+    <section style="color: white;" class="hakkimizda">
+        <h2>Hakkımızda</h2>
+        <p> Sitemize hoş geldiniz! Kitap dünyası, her bir sayfada yeni bir boyut açan sonsuz bir evrendir.
+            Burada, hayal gücünüzü genişletecek, düşüncelerinizi derinleştirecek ve ruhunuzu besleyecek eserler bulacaksınız.
+            Dünya klasiklerinden modern romanlara, şiirlerden bilim kurgulara kadar pek çok türdeki kitaplarla, 
+            her okur için bir şeyler sunuyoruz. <br><br>
+            
+            Her bir kitap, yalnızca bir hikaye değil; duygularınızı, düşüncelerinizi ve deneyimlerinizi yeni boyutlara taşıyan bir yolculuktur.
+            Bu yolculukta size rehberlik etmek ve yeni boyutlara adım atmanızı sağlamak için burada. 
+            Okumaya başlamadan önce, ilginizi çekecek önerilerimizi keşfedin!</p>
+        <p>Kitap Önerileri, edebiyat severlere en iyi kitapları öneren bir platformdur. Amacımız, okuyuculara farklı türlerdeki eserleri tanıtmak ve edebiyat dünyasına dair bilgi sunmaktır.</p>
+        <p>Geniş kitap arşivimiz ve ekibimiz ile her zaman kaliteli önerileri sunmayı hedefliyoruz.</p>
+
+        <h3>Misyonumuz</h3>
+        <p>Okuyuculara zengin bir kitap yelpazesi sunmak ve edebiyatı sevdirmek.</p>
+
+        <h3>Vizyonumuz</h3>
+        <p>Türkiye’deki edebiyat kültürüne katkıda bulunmak ve her yaş grubundaki okura ulaşmak.</p>
+
+        <h3>Değerlerimiz</h3>
+        <ul>
+            <li>Kalite</li>
+            <li>Yenilikçilik</li>
+            <li>Topluma Katkı</li>
+        </ul>
+
+        <h3>Ekibimiz</h3>
+        <div class="karakter-item">
+            <p><strong>Abdülsamet MANAV</strong> - Kurucu ,Editör ve İçerik Yöneticisi </p>
+        </div>
+    </section>
+</main>
+
+<section style="color: white;" id="iletisim">
+    <h2>İletişim</h2>
+    <p>Bizimle iletişime geçmek isterseniz (mailto:email@example.com) , değerli önerilerinizi aşağıda bulunan kısımdan gönderebilirsiniz. Her türlü geri bildiriminiz bizim için değerlidir!</p>
+    <form action="/iletisim" method="POST">
+        <label for="isim">İsim:</label>
+        <input type="text" id="isim" name="isim" required>
+        <label for="oneri">Önerileriniz:</label>
+        <input type="oneri" id="oneri" name="oneri" required>
+        <label for="mesaj">Mesaj:</label>
+        <textarea id="mesaj" name="mesaj" required></textarea>
+        <button type="submit">Gönder</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Kitap Önerileri. Tüm Hakları Saklıdır.</p>
+</footer>
+
+</body>
+</html>

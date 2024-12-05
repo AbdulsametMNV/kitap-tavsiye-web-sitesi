@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoriler</title>
+    <link rel="stylesheet" href="../static/styles.css"> <!-- CSS dosyasını bağlama -->
+    <link rel="stylesheet" href="../static/styles-index.css"> 
+</head>
+
+<header>
+    <h1 style="font-family: Garamond; color: #000033;"><i>TAMANO</i></h1>
+
+    <form method="POST" action="/search">
+        <input type="text" name="query" placeholder="Aramak için yazın..." required>
+        <button type="submit">Ara</button>
+    </form>
+    
+    <nav>
+        <ul>
+            <li><a href="/">Anasayfa</a></li>
+            <li><a href="/hakkimizda">Hakkımızda ve İletişim</a></li>
+            <li><a href="/login">Katıl</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body class="favori-body">
+<!--   
+    <section>
+        <h2 style="color: white;">Favorilerim</h2>
+        <div id="favoritesList" class="favorites-display"></div>
+
+                
+        <script>
+            // Flask'tan gelen 'user_id' değerini doğru şekilde JavaScript'e aktarmak
+            var userLoggedIn = 'user_id' in session | tojson | safe ;
+        
+            // Eğer kullanıcı giriş yapmamışsa, localStorage'dan favori ürünlerini temizle
+            if (!userLoggedIn) {
+                localStorage.removeItem('favorites');
+            }
+        
+            // Sunucudan favori ürünleri al
+            fetch('/favorites', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                const favoritesList = document.getElementById('favoritesList');
+                
+                // Sunucudan gelen favori ürünleri işleme
+                if (data.length > 0) {
+                    data.forEach(product => {
+                        const productContainer = document.createElement('div'); // Her ürün için bir kapsayıcı div
+                        productContainer.classList.add('favorite-product');
+        
+                        const productName = document.createElement('h3');
+                        productName.textContent = product.name;
+        
+                        const productImage = document.createElement('img');
+                        productImage.src = product.image_url; // Ürün görsel URL'si
+                        productImage.width = 250; // Resim genişliği
+        
+                        const productDescription = document.createElement('p');
+                        productDescription.textContent = product.description;
+        
+                        productContainer.appendChild(productName);
+                        productContainer.appendChild(productImage);
+                        productContainer.appendChild(productDescription);
+                        favoritesList.appendChild(productContainer);
+                    });
+                } else {
+                    favoritesList.innerHTML = "<p>Favorilerde hiç ürün yok!</p>";
+                }
+            })
+            .catch(error => console.error('Favoriler alınırken hata oluştu:', error));
+        
+            // LocalStorage'dan favori resimlerini al (eğer varsa)
+            const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+            if (favorites.length > 0) {
+                const favoritesList = document.getElementById('favoritesList');
+                favorites.forEach(src => {
+                    const imgContainer = document.createElement('div'); // Her resim için bir kapsayıcı div
+                    imgContainer.classList.add('favorite-image');
+        
+                    const img = document.createElement('img');
+                    img.src = src;
+                    img.width = 250; // Resim genişliği
+        
+                    imgContainer.appendChild(img);
+                    favoritesList.appendChild(imgContainer);
+                });
+            }
+        </script>
+        
+    </section> -->
+    
+     <section>
+        <h2 style="color: white;">Favorilerim</h2>
+        <div id="favoritesList" class="favorites-display"></div>
+         
+
+         <script>
+            // LocalStorage'dan favorileri al
+            const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+            const favoritesList = document.getElementById('favoritesList');
+
+            if (favorites.length > 0) {
+                favorites.forEach(src => {
+                    const imgContainer = document.createElement('div'); // Her resim için bir kapsayıcı div
+                    imgContainer.classList.add('favorite-image');
+
+                    const img = document.createElement('img');
+                    img.src = src;
+                    img.width = 250; // Resim genişliği
+
+                    imgContainer.appendChild(img);
+                    favoritesList.appendChild(imgContainer);
+                });
+            } else {
+                favoritesList.innerHTML = "<p>Favorilerde hiç kitap yok!</p>";
+            }
+        </script>
+    </section> 
+
+
+
+
+</body>
+</html>

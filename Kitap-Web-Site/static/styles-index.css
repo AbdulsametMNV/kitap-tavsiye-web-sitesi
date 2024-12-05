@@ -1,0 +1,192 @@
+body {
+    margin: 0; /* Varsayılan kenar boşluklarını sıfırlayın */
+    padding: 0; /* Varsayılan iç boşlukları sıfırlayın */
+    padding-left: 40px; /* Sol boşluk */
+    padding-right: 40px; /* Sağ boşluk */
+}
+
+
+.index-body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    color: #000; /* Yazı rengi siyah */
+    position: relative;
+    background-color: white; /* Arka plan beyaz */
+    max-width: 1366px; /* Genişliği 1200 piksel ile sınırlayın */
+}
+
+header {
+    background: rgba(255, 255, 255, 0.8); /* Saydam beyaz arka plan */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* İçerikleri sağa ve sola ayır */
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px; /* Başlık boyutunu ayarla */
+    margin: 0;
+    color: #000; /* Siyah yazı */
+}
+
+nav {
+    text-align: center; /* Navigasyonu ortaya hizala */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Butonları ortala */
+    gap: 30px; /* Butonlar arası boşluk */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #000; /* Yazı rengi siyah */
+    text-decoration: none;
+    font-size: 18px; /* Yazı boyutunu büyüt */
+    padding: 10px 15px; /* Buton içindeki boşlukları artır */
+    transition: background-color 0.3s;
+    border-radius: 5px; /* Kenarları yuvarlat */
+}
+
+nav ul li a:hover {
+    background-color: #000033; /* Üzerine gelince arka plan rengi koyu mavi */
+    color: white; /* Üzerine gelince yazı rengi beyaz olsun */
+}
+
+
+
+section {
+    margin: 40px auto; /* Ortalamak için */
+    padding: 20px; /* İçerik için boşluk */
+    background: #000033; /* Daha koyu lacivert arka plan */
+}
+
+#sectionadmin {
+    text-align: center; /* Başlığı ortala */
+    padding: 20px; /* İç boşluk */
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+
+
+.dunyaEdeb1 img,
+.dunyaEdeb2 img,
+.dunyaEdeb3 img {
+    width: 300px; /* Resim genişliği */
+    height: 420px; /* Resim yüksekliği */
+    margin-right: 20px; /* Resim ile metin arasında boşluk */
+    transition: transform 0.3s ease; /* Geçiş efekti */
+}
+
+.dunyaEdeb1 img:hover,
+.dunyaEdeb2 img:hover,
+.dunyaEdeb3 img:hover{
+    transform: scale(1.05); /* Üzerine gelindiğinde %5 büyüt */
+}
+
+.dunyaEdeb1,
+.dunyaEdeb2,
+.dunyaEdeb3 {
+    display: flex;
+    align-items: flex-start; /* Dikey hizalama */
+    margin: 20px 0; /* Üst ve alt boşluk */
+    padding: 15px; /* İç boşluk */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hafif gölgelendirme */
+}
+
+.dunyaEdeb1 p,
+.dunyaEdeb2 p,
+.dunyaEdeb3 p {
+    color: #000033; /* Yazı rengi */
+    max-width: 900px; /* Yazı genişliği 500px ile sınırlı */
+    margin: 0; /* Varsayılan margin'i sıfırla */
+    background: rgba(255, 255, 255, 0.9); /* Saydam beyaz arka plan */
+    line-height: 2; /* Satır yüksekliği */
+    padding: 20px; /* İç boşluk ekle (arka planın görünümünü iyileştirir) */
+    border-radius: 5px; /* Kenarları yuvarlat */
+}
+
+.dunyaEdeb1 h4,
+.dunyaEdeb3 h4{
+    color: #000; /* Siyah başlıklar */
+    margin-top: 10px; /* Üst boşluk */
+    font-weight: bold; /* Kalın yazı */
+}
+
+.dunyaEdeb2 h4 {
+    text-align: right; /* Başlığı sağa hizalıyoruz */
+    margin-top: 10px; /* Üst boşluk */
+    color: #000; /* Siyah başlıklar */
+    font-weight: bold; /* Kalın yazı */
+}
+
+.book-info {
+    display: flex; /* Flexbox ile yan yana hizalama */
+    justify-content: center; /* Ortada hizalama */
+    align-items: center; /* Dikey olarak ortada hizalama */
+    margin-top: 20px; /* Üst boşluk */
+    border: 2px solid #000033; /* Çerçeve rengi */
+    padding: 10px; /* İç boşluk */
+    border-radius: 5px; /* Kenarları yuvarlat */
+}
+
+.book-image {
+    width: 350px; /* Resim genişliği */
+    height: auto; /* Yükseklik orantılı */
+    margin-right: 20px; /* Resim ile metin arasında boşluk */
+}
+
+.book-details {
+    text-align: left; /* Metni sola hizala */
+}
+
+

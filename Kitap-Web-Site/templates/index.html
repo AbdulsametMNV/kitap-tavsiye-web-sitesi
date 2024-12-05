@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kitap Önerileri</title>
+        <link rel="stylesheet" href="../static/styles.css"> <!-- CSS dosyasını bağlama -->
+        <link rel="stylesheet" href="../static/styles-index.css"> 
+    </head>
+    
+    <body class="index-body"> <!-- class ekleyin -->
+        <header>
+            <h1 style="font-family: Garamond; color: #000033 ;"><i>PUERTAS</i></h1>
+
+
+            <form method="POST">
+                <input type="text" name="isim" placeholder="Aramak için yazın..." required>
+                <button type="submit">Ara</button>
+            </form>
+
+            
+            <nav>
+                <br>
+                <ul>
+                    <li><a href="/">Anasayfa</a></li>
+                    <li><a href="/hakkimizda">Hakkımızda ve İletişim</a></li>
+                    
+                    {% if session.get('username') %}
+                        {% if session.get('username') == 'admin' %}
+                            <!-- <li><a href="/favoriler">Favorilerim</a></li> -->
+                            <li><a href="/kullanicilar">Kullanıcılar</a></li>
+                        {% endif %}
+                        <li>Merhaba, {{ session['username'] }}</li>
+                        <li><a href="{{ url_for('logout') }}">Çıkış Yap</a></li>
+                    {% else %}
+                        <li><a href="/login">Katıl</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+            
+            
+        </header>
+        <br><br>
+    
+        <div class="image-container">
+            <img src="../static/giris.png" alt="Giriş" class="centered-image"> <!-- Giriş resmi -->
+        </div>
+    
+        <br><br><br>
+    
+        <div>
+            <div class="button-container">
+                <a href="/dklasik">  
+                <img src="../static/sefiller.jpg" alt="Buton 1" class="button-image"></a>
+                <a href="/tklasik">
+                <img src="../static/cezmi.jpg" alt="Buton 2" class="button-image"></a>
+                <a href="/bilimk">  
+                <img src="../static/1984.jpg" alt="Buton 3" class="button-image"></a>
+                <a href="/polisiye">
+                <img src="../static/mathilda-mary-shelley.jpg" alt="Buton 4" class="button-image"></a>
+                <a href="/romanlar">  
+                <img src="../static/serenad.jpg" alt="Buton 5" class="button-image"></a>
+                <a href="/siirler">
+                <img src="../static/yalnizlik-paylasilmaz-yeni-kap.jpg" alt="Buton 6" class="button-image"></a>
+
+            </div>
+    
+            <style>
+    
+    
+            .image-container {
+                text-align: center;
+            }
+    
+            .button-container {
+                text-align: center;
+                margin-top: 20px;
+            }
+    
+            .button-image {
+                width: 150px; /* Buton resimlerinin genişliği */
+                height: 200px;
+                margin: 0 10px; /* Butonlar arasında boşluk */
+                cursor: pointer;
+                border: 15px solid #000033 ; /* Çerçeve rengi ve kalınlığı */
+                border-radius: 5px; /* Köşeleri hafif yuvarlama (isteğe bağlı) */
+            }
+            </style>
+        </div>
+        
+        <br><br><br>
+       
+    </div>
+    
+        <nav>
+            <ul>
+                <li><a href="/dklasik">Dünya Klasikleri</a></li>
+                <li><a href="/tklasik">Türkiye Edebiyatında İlkler</a></li>
+                <li><a href="/bilimk">Bilim Kurgu</a></li>
+                <li><a href="/polisiye">Polisiye</a></li>
+                <li><a href="/romanlar">Romanlar</a></li>
+                <li><a href="/siirler">Şiirler</a></li>
+            </ul>
+        </nav>
+    
+       
+
+    <br><br>
+
+    <h3>Öncelikle eğer ilk defa kitap okumaya başlayacaksanız veya daha yeni başladıysanız sayfa sayısı fazla olmayan dünya klasiklerinden okumaya başlamanızı tavsiye ederiz. Diğer türlü kitap okumaktan kolayca sıkılabilirsiniz. Dünya Klasikleri size çokta cazip gelmiyorsa sevdiğiniz film türlerine göre kitap seçimi yapabilirsiniz.</h3>
+    <br><br><br>
+
+    <h2 style="font-family: Garamond; color: #000033;">Dünya Edebiyatında İlkler</h2>
+
+
+    <section id="section">
+   
+        <div>  
+           <p style="color: #000033;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet optio dolores possimus iste perspiciatis! Autem consequatur fugit, tempora, culpa assumenda pariatur voluptatem molestias a labore consectetur quia consequuntur? Facilis, neque.
+           </p>
+            <div class="dunyaEdeb1">
+                <img src="../static/Decameron-Öyküleri.jpg" width="150">
+                <p style="color: #000033;">Decameron, Giovanni Boccaccio tarafından yazılmıştır. 1348'de Avrupa'da büyük bir veba salgını olur. Salgın boyunca tanık olduğu olaylardan etkilenen Boccaccio, 1348'de başlayıp, 1351'de bitirdiği Decameron'da salgın günlerinin Floransa'sını ele alır.
+
+                    10 gün boyunca anlatılan 100 öyküden oluşur. Günde 10 öykü anlatılır. Her günü bir kral ya da kraliçe yönetir. Bunlar veba salgınından kaçmak için toplanan yedi genç kadınla (Pampinea, Filomena, Lauretta, Emilia, Ellisa, Fieametta ve Neifile) üç erkektir (Panfilo, Filostrato, Dioneo).
+                        
+                    Bu gençler, gönüllerince yaşayarak gülüp eğlenmek, aklın sınırları dışına taşmayan zevkler tadabilmek amacıyla önce Fiesole dolaylarında bir evde, sonra bir şatoda konaklar. Her gün, Cuma ve Cumartesi dışında; öğleden sonra bir öykü anlatır. Öykünün konusunu, o gün kim kral ya da kraliçe olduysa o belirler. Birinci ve dokuzuncu günde ise herkes dilediği öyküyü anlatır.
+                    Böylece yüz öykü anlatılmış olur.
+                </p>
+            </div>
+            <h4 dunyaEdeb1 style="font-family: Garamond; color: white;">Dünya Edebiyatında Hikâye Türünün ilk Örneği: Decameron Öyküleri (14.yüzyıl) -Giovanni Boccacio</h4>
+
+            <div class="dunyaEdeb2">
+                <img src="../static/don_kisot.jpg" width="150">
+                <p style="color: #000033;">Don Kişot ya da Don Kihote, Miguel de Cervantes tarafından yazılmıştır. La Mancha ilinde yaşayan 50'li yaşlarında bir aristokrat olan Alonso Quijano, şövalye kitaplarına takıntılıdır.
+                        O kadar çok okur ki, sonunda çıldırır. Fakat sadece şövalyelerle ilgili konularda çıldırmıştır,
+                        diğer konularda ise son derece akıllı bir asilzadedir. Quijano şövalye kitaplarını okuya okuya iyice onlara özenir. 
+                        Dedesinden kalma zırh, kılıç vs aletleri temizler, kendi gibi sıska olan atını da eyerleyip yola çıkar. 
+                        Sonra komşusu Sancho Panza'yı vali yapma vaatleriyle kandırıp kendine silahtar yapar. Bir köylü kızını da sevgilisi ilan eder. 
+                     Ve her şeyini bırakıp yollara düşer.</p>
+            </div>
+            <h4 class="dunyaEdeb2" style="font-family: Garamond; color: white;">Dünya Edebiyatında İlk Modern Roman Örneği: Don Kişot -Cervantes</h4>
+
+            <div class="dunyaEdeb3">
+                <img src="../static/gilgimis.jpg" width="150">
+                <p style="color: #000033;">Gılgamış Destanı, antik Mezopotamya'dan bir destandır. Hikayenin ilk yarısında Gilgamesh (Uruk kralıydı) ve tanrılar tarafından Gilgamesh'in Uruk halkına zulmetmesini engellemek için yaratılan vahşi bir adam olan Enkidu tartışılıyor. Enkidu, Shamhat ile cinsel inisiyasyon yoluyla uygarlaştıktan sonra Uruk'a seyahat eder ve burada Gilgamesh'e bir güç testinde meydan okur.
+                        Gilgamesh yarışmayı kazanır; yine de ikisi arkadaş olurlar. Birlikte efsanevi Sedir Ormanı'na altı günlük bir yolculuk yaparlar ve burada sonunda Koruyucusu Humbaba'yı öldürüp kutsal Sedir'i keserler. [ 5 ] Tanrıça İştar, Gılgamış'ın ilerlemelerini reddettiği için onu cezalandırmak için Gök Boğası'nı gönderir . 
+                        Gılgamış ve Enkidu, Gök Boğası'nı öldürerek bu süreçte İştar'a hakaret ederler, ardından tanrılar Enkidu'yu ölüme mahkûm etmeye ve ona ölümcül bir hastalık vererek onu öldürmeye karar verirler.
+
+                <br>
+                Destanın ikinci yarısında, Enkidu'nun ölümüyle ilgili sıkıntı, Gilgamesh'in sonsuz yaşamın sırrını keşfetmek için uzun ve tehlikeli bir yolculuğa çıkmasına neden olur. Sonunda "Aradığınız yaşamı asla bulamazsınız. Çünkü tanrılar insanı yarattıklarında, ölümün onun payı olmasına ve yaşamın kendi ellerinde tutulmasına izin verdiler"</p>
+                
+            </div>
+            <h4 class="dunyaEdeb3" style="font-family: Garamond; color: white;">Dünyanın Bilinen İlk Destanı: Gılgamış Destanı -Sümerler</h4>
+
+        </div>  
+        <br><br>
+
+    <section>
+    
+    <section id="sectionadmin">
+        <h2 style="color: white;">ADMİNİN FAVORİSİ</h2>
+        <div class="book-info">
+            <div class="image-container">
+                <img src="../static/olasiliksiz.jpg" alt="Olasılıksız Kitabı " class="book-image">
+            </div>
+            <div style="color: white;" class="book-details">
+                <p>
+                    Kitabı ilk okumaya başladığınızda çevremden duyduğum kadarıyla çoğu kişi sıkılmış. <br>
+                    Kitabı okumaya devam ettiklerinnde sevöeye başlamışlar. Eğer sizde bu kitabı okumaya karar verdiyseniz biraz sabretmeniz gerekiyor. <br>
+                    Kitabın devamında olaylar tahmin edemeyeceğiniz şekilde yol alıyor. <br>
+                    Eğer bilim kurgu seviyorsanız kitabı okumanızı şiddetle tavsiye edebilirim.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+
+    <footer style="color: whitesmoke; font-weight:700;">
+        <p>&copy; 2024 Kitap Önerileri. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    
+</body>
+</html>

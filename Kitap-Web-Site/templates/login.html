@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Formu</title>
+    <link rel="stylesheet" href="../static/style-login.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="wrapper"> 
+        <form id="loginForm" action="/login" method="POST">
+            <h1>Giriş yap</h1>
+            <div class="input-box">
+                <input id="username" type="text" name="username" placeholder="Kullanıcı adı" required>
+                <i class="bx bxs-user"></i>
+            </div>
+            <div class="input-box">
+                <input id="password" type="password" name="password" placeholder="Şifre" required>
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+
+            
+            <button type="submit" class="btn">Giriş Yap</button>
+
+            <div class="register-link">
+                <p>Hesabınız yok mu? <a href="/kaydol">Kayıt olun</a></p>
+            </div>
+
+            <div class="register-link">
+                <p>Anasayfaya <a href="/">dön</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Giriş formunu AJAX ile gönderme
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Normal form gönderimini durdur
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            fetch('/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ username, password })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    // Hata yanıtını ele al
+                    return response.json().then(data => { throw new Error(data.error || 'Bir hata oluştu.'); });
+                }
+                return response.json();  // Başarılı yanıt
+            })
+            .then(data => {
+                alert(data.message);  // Giriş başarılı mesajı
+                window.location.href = '/';  // Ana sayfaya yönlendir
+            })
+            .catch(error => {
+                alert(error.message);  // Hata mesajını göster
+            });
+        });
+
+    </script>
+
+</body>
+</html>
